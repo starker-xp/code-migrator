@@ -1,0 +1,31 @@
+{
+  "name": "starker-xp/code-migrator",
+  "license": "MIT",
+  "type": "library",
+  "description": "Migrate php legacy without namespace to namespace",
+  "autoload": {
+    "psr-4": {
+      "Starkerxp\\CodeMigrator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Starkerxp\\CodeMigrator\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Guillaume CAOUISSIN",
+      "email": "guillaume.caouissin@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^5.4",
+    "symfony/options-resolver": "^3.4",
+    "psr/log": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "satooshi/php-coveralls": "~1.0"
+  }
+}
