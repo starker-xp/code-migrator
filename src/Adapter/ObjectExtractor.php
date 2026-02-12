@@ -61,7 +61,7 @@ class ObjectExtractor extends AbstractAdapter
         $code = $this->getContent($file);
 
         foreach ($classes as $fqdn => $classContent) {
-            $filename = $this->getFilename($classContent);
+            $filename = $this->getFilename($fqdn);
             if (file_exists($filename)) {
                 throw new \LogicException('new file \'' . $filename . '\' already exist please check manually');
             }

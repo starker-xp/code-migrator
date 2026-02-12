@@ -18,7 +18,7 @@ class ChangeFileExtension extends AbstractAdapter
 
     public function run($file)
     {
-        if (!false !== strpos($file, $this->old)) {
+        if (false === strpos($file, $this->old)) {
             return true;
         }
         $newFilename = basename($file, '.') . $this->new;
